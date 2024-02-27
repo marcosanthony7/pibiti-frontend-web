@@ -1,0 +1,158 @@
+/* Global */
+body{
+  color: white;
+  font-size: 1.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo no eixo horizontal */
+  align-items: center; /* Centraliza o conteúdo no eixo vertical */
+  background-color: #6C0DBF; /* Exemplo de cor de fundo */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  position: fixed; /* Define o posicionamento relativo para posicionar absolutamente o botão de voltar */
+  top: 0; /* Ajusta o cabeçalho no topo da viewport */
+  left: 0;
+  right: 0; /* Estende o cabeçalho por toda a largura da tela */
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px; /* Ajuste o tamanho conforme necessário */
+  position: absolute; /* Posiciona o botão de voltar absolutamente */
+  top: 50%;
+  transform: translateY(-50%); /* Desloca o botão para cima por 50% da sua altura, centralizando-o verticalmente */
+  left: 10px; /* Posiciona o botão de voltar a 10px do lado esquerdo */
+  cursor: pointer;
+}
+
+.footer {
+  /* Estilize seu rodapé aqui */
+  background-color: #6C0DBF;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.8em;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 10px 0;
+  color: #8a8b8e;
+  border: 1px solid #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+input[type="text"]:focus {
+  border-color: #6C0DBF;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ChatChamado */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ajuste a altura do container para a altura da viewport */
+  justify-content: space-between; /* Distribui o espaço entre o conteúdo e o rodapé */
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Habilita rolagem se as mensagens excederem a altura */
+  width: 50%; /* Ou a largura que deseja */
+  margin: 10px auto; /* Centraliza o botão horizontalmente */
+  margin-bottom: 140px; /* Espaço para a área de input e botão */
+  margin-top: 120px; /* A altura deve ser igual ou maior que a do chat-header para evitar sobreposição */
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.message span {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #ddd; /* Cor do timestamp */
+}
+
+.sent {
+  background-color: #6C0DBF; /* Cor de fundo da mensagem enviada */
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.received {
+  background-color: #47335A; /* Cor de fundo da mensagem recebida */
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #47335A; /* Cor de fundo da área de entrada */
+  width: 50%; /* Ou a largura que deseja */
+  margin: 10px auto; /* Centraliza o botão horizontalmente */
+  position: fixed; /* Fixa a área de input na parte inferior */
+  bottom: 100px; /* Distância do fundo, ajuste conforme necessário para não sobrepor o footer */
+  left: 0;
+  right: 0;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  height: 20px;
+}
+
+.chat-input button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px; /* Reduz o preenchimento do botão */
+  margin-left: 5px; /* Adiciona espaço entre o botão e o input */
+  cursor: pointer; /* Altera o cursor para indicar a possibilidade de clique */
+}
