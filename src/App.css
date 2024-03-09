@@ -1,6 +1,5 @@
 /* Global */
 body{
-  color: white;
   font-size: 1.6rem;
 }
 
@@ -18,6 +17,24 @@ body{
   left: 0;
   right: 0; /* Estende o cabeçalho por toda a largura da tela */
   z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.btnBack {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px; /* Ajuste o tamanho conforme necessário */
+  position: absolute; /* Posiciona o botão de voltar absolutamente */
+  top: 50%;
+  transform: translateY(-50%); /* Desloca o botão para cima por 50% da sua altura, centralizando-o verticalmente */
+  left: 20px; /* Posiciona o botão de voltar a 10px do lado esquerdo */
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 30px;
+  text-align: justify;
+  margin-top: 140px; /* A altura deve ser igual ou maior que a do chat-header para evitar sobreposição */
 }
 
 input {
@@ -48,7 +65,7 @@ input[type="text"]:focus {
   border-color: #6C0DBF;
 }
 
-/* ---------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
 
 /* ChatChamado */
 .chat {
@@ -99,4 +116,66 @@ input[type="text"]:focus {
   padding: 5px 10px; /* Reduz o preenchimento do botão */
   margin-left: 5px; /* Adiciona espaço entre o botão e o input */
   cursor: pointer; /* Altera o cursor para indicar a possibilidade de clique */
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* ListaChamadas */
+.containerChamada {
+  display: flex; /* Adiciona display flex */
+  justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+  background-color: #C5AFF8;
+  padding: 2px 30px;
+  margin: 30px auto;
+  border-radius: 20px;
+  width: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative; /* Adiciona posição relativa para o posicionamento do botão */
+}
+.containerChamada:hover{
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.chamadaTitle{
+  font-size: 30px;
+  color: #333333;
+}
+
+.chamadaMensagem{
+  font-size: 24px;
+  color: #47335A;
+}
+
+.horaMensagem{
+  font-size: 24px;
+  color: #47335A; /* Cor do timestamp */
+  align-self: flex-end; /* Alinha a horaMensagem à direita */
+}
+
+.btnMenu {
+  font-size: 30px; /* Tamanho do ícone de hambúrguer */
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  right: 30px; /* Margem direita correspondente ao padding do containerChamada */
+  transform: translateY(-50%);
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* VisualizarChamado */
+.dadosTitle{
+  font-size: 30px;
+  text-align: center;
+}
+
+.dadosChamado{
+  text-align: center;
 }
