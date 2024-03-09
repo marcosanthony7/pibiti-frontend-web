@@ -17,7 +17,7 @@ const VisualizarChamado = () => {
       </div>
       <div className="content">
         <h2 className='dadosTitle'>Dados</h2>
-        <p className='dadosChamado'>Data: 09/03/2023</p>
+        <p className='dadosChamado'>Data: 09/03/2024</p>
         <p className='dadosChamado'>Hora: 12:55</p>
       </div>
     </div>
