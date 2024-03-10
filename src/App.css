@@ -29,6 +29,13 @@ body{
   transform: translateY(-50%); /* Desloca o botão para cima por 50% da sua altura, centralizando-o verticalmente */
   left: 20px; /* Posiciona o botão de voltar a 10px do lado esquerdo */
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btnBack:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra de 2px ao redor do botão ao passar o mouse */
 }
 
 .content {
@@ -166,6 +173,13 @@ input[type="text"]:focus {
   top: 30%;
   right: 30px; /* Margem direita correspondente ao padding do containerChamada */
   transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btnMenu:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra de 2px ao redor do botão ao passar o mouse */
 }
 
 /* --------------------------------------------------------------------------------------- */
