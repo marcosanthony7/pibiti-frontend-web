@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ListaChamadas = () => {
+const ChamadosArquivados = () => {
   const navigate = useNavigate();
 
   // Função para voltar para a página anterior
@@ -23,17 +23,11 @@ const ListaChamadas = () => {
     navigate('/chamados/chat');
   };
 
-  const handleListaClick = () => {
-    // Navega para /chamados/arquivados
-    navigate('/chamados/arquivados');
-  };
-
   return (
     <div className="containerLista">
       <div className="header">
         <button className='btnBack' onClick={voltar}>&larr;</button>
-        <h1>Chamadas de Pânico</h1>
-        <button className="btnListar" onClick={handleListaClick}>Chamados Arquivados</button>
+        <h1>Chamados Arquivados</h1>
       </div>
       <div className="content">
         <div className="containerChamada" onClick={handleContainerClick}>
@@ -58,4 +52,4 @@ const ListaChamadas = () => {
   );
 };
 
-export default ListaChamadas;
+export default ChamadosArquivados;

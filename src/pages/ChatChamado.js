@@ -100,11 +100,19 @@ const ChatChamado = () => {
     navigate(-1); // Navega de volta para a página anterior no histórico do navegador
   };
 
+  const handleVisualizarClick = (event) => {
+    // Impede a propagação do evento para o container de chamada
+    event.stopPropagation();
+    // Navega para /chamados/visualizar
+    navigate('/chamados/visualizar');
+  };
+
   return (
     <div className="chat">
       <header className="header">
         <button className='btnBack' onClick={voltar}>&larr;</button>
         <h1>Chat SSP</h1>
+        <button className="btnVisualizar" onClick={handleVisualizarClick}>Visualizar Chamado</button>
       </header>
 
       <div className='containerChat' id='outMensagens'>
@@ -123,8 +131,8 @@ const ChatChamado = () => {
 
       <div className='containerMensagem'>
         <input type='text' value={inputMensagem} placeholder='Digite uma mensagem' onChange={(text) => setInputMensagem(text.target.value)}/>
-        <button id='btnEnviar' onClick={handleEnviarMensagem}>&rarr;</button>
-        <button id='btnGravar' onClick={handleGravadorAudio}>{isRecording ? '✖' : '🔊' }</button>
+        <button id='btnEnviar' className='btnEnviar' onClick={handleEnviarMensagem}>&rarr;</button>
+        <button id='btnGravar' className='btnGravar' onClick={handleGravadorAudio}>{isRecording ? '✖' : '🔊' }</button>
       </div>
     </div>
   );

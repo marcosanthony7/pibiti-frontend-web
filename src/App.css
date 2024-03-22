@@ -20,6 +20,7 @@ body{
 }
 
 .btnBack {
+  border-radius: 10px;
   background: none;
   border: none;
   color: white;
@@ -36,6 +37,7 @@ body{
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra de 2px ao redor do botão ao passar o mouse */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .content {
@@ -122,7 +124,56 @@ input[type="text"]:focus {
   font-size: 20px;
   padding: 5px 10px; /* Reduz o preenchimento do botão */
   margin-left: 5px; /* Adiciona espaço entre o botão e o input */
+  margin-right: 10px; /* Adiciona espaço entre o botão e o input */
   cursor: pointer; /* Altera o cursor para indicar a possibilidade de clique */
+}
+
+.btnEnviar {
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btnEnviar:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra de 2px ao redor do botão ao passar o mouse */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btnGravar {
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btnGravar:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra de 2px ao redor do botão ao passar o mouse */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btnVisualizar{
+  /* Estilize os botões de ação aqui */
+  background-color: #C5AFF8; /* Exemplo de cor de fundo */
+  border: none;
+  border-radius: 10px; /* Para bordas levemente arredondadas */
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Margem direita correspondente ao padding do containerChamada */
+  transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btnVisualizar:hover{
+  background-color: #DEA4FF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -142,6 +193,7 @@ input[type="text"]:focus {
   position: relative; /* Adiciona posição relativa para o posicionamento do botão */
 }
 .containerChamada:hover{
+  background-color: #DEA4FF;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
@@ -164,6 +216,7 @@ input[type="text"]:focus {
 }
 
 .btnMenu {
+  border-radius: 10px;
   font-size: 30px; /* Tamanho do ícone de hambúrguer */
   background: none;
   border: none;
@@ -180,6 +233,31 @@ input[type="text"]:focus {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra de 2px ao redor do botão ao passar o mouse */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btnListar {
+  /* Estilize os botões de ação aqui */
+  background-color: #C5AFF8; /* Exemplo de cor de fundo */
+  border: none;
+  border-radius: 10px; /* Para bordas levemente arredondadas */
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Margem direita correspondente ao padding do containerChamada */
+  transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btnListar:hover{
+  background-color: #DEA4FF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -192,4 +270,28 @@ input[type="text"]:focus {
 
 .dadosChamado{
   text-align: center;
+}
+
+.btnChat{
+  /* Estilize os botões de ação aqui */
+  background-color: #C5AFF8; /* Exemplo de cor de fundo */
+  border: none;
+  border-radius: 10px; /* Para bordas levemente arredondadas */
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Margem direita correspondente ao padding do containerChamada */
+  transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btnChat:hover{
+  background-color: #DEA4FF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }

@@ -9,11 +9,17 @@ const VisualizarChamado = () => {
     navigate(-1); // Navega de volta para a página anterior no histórico do navegador
   };
 
+  const handleChatClick = () => {
+    // Navega para /chamados/chat
+    navigate('/chamados/chat');
+  };
+
   return (
     <div className="containerVisualizar">
       <div className="header">
         <button className='btnBack' onClick={voltar}>&larr;</button>
         <h1>Visualizar Chamado</h1>
+        <button className="btnChat" onClick={handleChatClick}>Chat SSP</button>
       </div>
       <div className="content">
         <h2 className='dadosTitle'>Dados</h2>
